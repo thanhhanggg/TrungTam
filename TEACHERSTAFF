@@ -1,0 +1,18 @@
+CREATE TABLE TEACHERSTAFF
+(
+    t_id                         NUMBER(10) CONSTRAINT t_id_nn NOT NULL,
+    t_name                       VARCHAR2(30) CONSTRAINT t_name_nn NOT NULL,
+    t_phone                      NUMBER(10),
+    t_birth                      DATE,
+    t_startdate                  DATE,
+    t_mail                       varchar(20),
+    t_icnum                      varchar(15), --cccd
+    t_salary                     NUMBER(20),
+    t_sex                        varchar(10),
+    t_addr                       NVARCHAR2(40),
+    t_type                       NVARCHAR2(20),
+
+
+    
+     CONSTRAINT t_teacherstaff_id_pk PRIMARY KEY (t_id)
+)
